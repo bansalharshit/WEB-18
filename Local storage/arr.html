@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var numbers=[1,2,3,4]
+
+    // JSON.stringify()
+    // JSON.stringify() will convert our string into arrary formate.it will work when you store someting in local storage
+
+    localStorage.setItem("luckynumber",JSON.stringify(numbers));
+
+// JSON.parse()
+    // if you want to get you item in the form of arrya then you have to use command JSON.parse();
+
+     var x=JSON.parse(localStorage.getItem("luckynumber"))
+
+    console.log(typeof x)
+
+    var names=["harshit","bansal","poojabansal"]
+   localStorage.setItem("studentnames",JSON.stringify(names))
+   var output=JSON.parse(localStorage.getItem("studentnames"))
+   console.log(output)
+   
+
+
+</script>

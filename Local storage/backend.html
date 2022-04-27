@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // setItem,getItem,clear,removeItem
+    // JSON.stringify()
+    //JSON.parse()
+
+    //number
+
+    // localStorage.setItem("key","value")
+    localStorage.setItem("mobileNO",82798555302)
+
+    localStorage.setItem("CVV","12345")
+var name="harshitbansal"
+    localStorage.setItem("name",name)
+    var studentname="akash"
+    localStorage.setItem("names",studentname)
+    var studentname1="ifran"
+    localStorage.setItem("name1",studentname1)
+
+    // localStoragecapicity=8mb
+    // kye should always in quote
+
+    // localStorage will accept only string and numbers 
+
+    // how to get my item form localStorage - we need only key so that you know about object 
+
+    var getmobile=localStorage.getItem("mobileNO")
+    console.log(getmobile);
+console.log(localStorage.getItem("CVV"));
+console.log(localStorage.getItem("name"))
+console.log(localStorage.getItem("harshit"))
+// when ever you try to search which is not present in localstorage return null 
+console.log(localStorage.getItem("name1"))
+localStorage.setItem("mobile",987654)
+
+
+var obj={
+    name:"masai",
+    name:"school"
+}
+console.log(obj)
+
+
+</script>
